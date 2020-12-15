@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/ba
 http://www.mulesoft.org/schema/mule/cloudhub http://www.mulesoft.org/schema/mule/cloudhub/current/mule-cloudhub.xsd
 http://www.mulesoft.org/schema/mule/ftp http://www.mulesoft.org/schema/mule/ftp/current/mule-ftp.xsd
 http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/current/mule-os.xsd">
-	<os:object-store name="Object_store" doc:name="Object store" doc:id="393b3f2e-b460-4af1-b3fb-b8efbd5782a6" />
+	<os:object-store name="Object_store" doc:name="Object store" doc:id="393b3f2e-b460-4af1-b3fb-b8efbd5782a6" entryTtl="20" entryTtlUnit="DAYS"/>
 	<file:config name="File_Config" doc:name="File Config" doc:id="95346a81-dcbd-4e5c-bb34-6a4a93fb320d" >
 		<file:connection workingDir="C:\Users\John\Desktop\New folder (5)" />
 	</file:config>
