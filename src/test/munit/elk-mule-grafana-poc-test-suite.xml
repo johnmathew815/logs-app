@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="elk-mule-grafana-poc-test-suite.xml" />
+	<munit:test name="elk-mule-grafana-poc-test-suite-app-logs-flowTest" doc:id="f54b7e2f-4570-4414-bc78-3c956db0401c" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to app-logs-flow" doc:id="9f9d9c0d-aacb-44a0-85e7-25dc89b10df1" name="app-logs-flow"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="elk-mule-grafana-poc-test-suite-app-logs-batch-flowTest" doc:id="36240da4-4726-46b9-a8f2-da4928494e09" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to app-logs-batch-flow" doc:id="327cf847-e116-4786-9423-1c31a8382553" name="app-logs-batch-flow"/>
+		</munit:execution>
+	</munit:test>
+
+
+</mule>
